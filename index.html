@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Is this the upcoming iPhone 17?</title>
+    <meta name="description" content="Discover the iPhone 17 Pro, featuring cutting-edge innovation and design. Experience the future of mobile technology with our interactive 3D showcase.">
+    <meta name="keywords" content="iPhone 17 Pro, Apple, smartphone, mobile technology, 3D model, innovation, design">
+    <meta property="og:title" content="iPhone 17 Pro - Revolutionary Mobile Technology">
+    <meta property="og:description" content="Discover the iPhone 17 Pro, featuring cutting-edge innovation and design. Experience the future of mobile technology.">
+    <meta name="twitter:title" content="iPhone 17 Pro - Revolutionary Mobile Technology">
+    <meta name="twitter:description" content="Discover the iPhone 17 Pro, featuring cutting-edge innovation and design. Experience the future of mobile technology.">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+    
+    <script type="module">
+        import "https://resource.trickle.so/vendor_lib/model-viewer.min.js";
+    </script>
+    
+
+    <!-- Dependencies for LiquidBackground -->
+    
+    <script type="module">
+        import * as OGL from "https://cdn.jsdelivr.net/npm/ogl@1.0.11/+esm";
+        window.OGL = OGL;
+    </script>
+    <script type="module"> 
+        import { twMerge } from "https://cdn.jsdelivr.net/npm/tailwind-merge@3.3.1/+esm";
+        window.twMerge = twMerge;
+    </script>
+
+    <!-- Predefined Tailwind CSS, use it as needed, or update base on your -->
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #667eea;
+            --secondary-color: #764ba2;
+            --accent-color: #f093fb;
+        }
+    }
+
+    @layer base {
+
+        body {
+            @apply font-sans antialiased;
+        }
+        
+        h1 {
+            @apply text-white font-bold tracking-wider;
+        }
+    }
+
+    @layer components {
+        .glass-effect {
+            @apply backdrop-blur-md bg-white bg-opacity-10 rounded-2xl border border-white border-opacity-20;
+        }
+    }
+
+    @layer utilities {
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    }
+    </style>
+
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel" src="lib/utils.js"></script>
+    <script type="text/babel" src="components/LiquidBackground.js"></script>
+    <script type="text/babel" src="components/DanmakuComment.js"></script>
+    <script type="text/babel" src="components/DanmakuManager.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
